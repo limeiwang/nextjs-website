@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import { BackToTop } from "@/components/BackToTop";
+import AICopilot from "@/components/AICopilot";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <BackToTop />
+        <AICopilot />
       </body>
     </html>
   );

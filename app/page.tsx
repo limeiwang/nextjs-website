@@ -33,19 +33,19 @@ const solutions: Solution[] = [
   {
     title: '智慧金融',
     description: '为金融机构提供智能风控、数据分析等全套解决方案',
-    image: '/solution-1.jpg',
+    image: '/images/solution-1.jpeg',
     features: ['智能风控', '数据分析', '金融科技', '区块链技术']
   },
   {
     title: '智慧医疗',
     description: '助力医疗机构实现数字化转型，提升诊疗效率',
-    image: '/solution-2.jpg',
+    image: '/images/solution-1.jpeg',
     features: ['远程诊疗', '智能影像', '医疗物联网', '健康管理']
   },
   {
     title: '智慧零售',
     description: '打造全渠道零售解决方案，提升用户购物体验',
-    image: '/solution-3.jpg',
+    image: '/images/solution-1.jpeg',
     features: ['全渠道销售', '智能库存', '会员管理', '数字营销']
   }
 ];
@@ -77,17 +77,17 @@ const cases = [
   {
     title: '某大型银行智能风控系统',
     description: '帮助客户建立全面的风险管理体系，显著提升风险识别准确率',
-    image: '/case-1.jpg'
+    image: '/images/solution-1.jpeg',
   },
   {
     title: '某三甲医院智慧医疗平台',
     description: '实现医疗资源智能调配，提升患者就医体验',
-    image: '/case-2.jpg'
+    image: '/images/solution-1.jpeg',
   },
   {
     title: '某连锁零售企业数字化转型',
     description: '打造全渠道零售体系，实现线上线下一体化运营',
-    image: '/case-3.jpg'
+    image: '/images/solution-1.jpeg',
   }
 ];
 
@@ -173,7 +173,7 @@ export default function Home() {
                 key={index}
                 className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
               >
-                <div className="aspect-w-16 aspect-h-9 relative">
+                <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
                   <Image
                     src={solution.image}
                     alt={solution.title}
@@ -216,7 +216,7 @@ export default function Home() {
                 key={index}
                 className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
               >
-                <div className="aspect-w-16 aspect-h-9 relative">
+                <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
                   <Image
                     src={case_.image}
                     alt={case_.title}
